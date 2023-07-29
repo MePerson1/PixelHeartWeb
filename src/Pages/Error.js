@@ -7,7 +7,7 @@ import c1 from "../Assets/c1.png";
 import c2 from "../Assets/c2.png";
 import c3 from "../Assets/c3.png";
 
-const Home = () => {
+const Error = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -49,15 +49,14 @@ const Home = () => {
           </div>
           <div className="content">
             <div className="text">
-              <div className="headline"> Forge Unbreakable Gaming Bonds</div>
-              <div className="bottomText">Find Your Perfect Match Online!</div>
+              <div className="headline">Ups... something went wrong :/</div>
             </div>
             <div className="getStarted">
               <div>
                 {" "}
                 <Button
-                  onClick={() => handleClick("start")}
-                  text="Get Started"
+                  onClick={() => navigate("/")}
+                  text="Back to home"
                 ></Button>
               </div>
             </div>
@@ -82,4 +81,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Error;
